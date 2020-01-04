@@ -2,9 +2,7 @@ package com.forezp.servicefeign.web;
 
 import com.forezp.servicefeign.clients.SchedualServiceHi;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Email miles02@163.com
@@ -23,5 +21,10 @@ public class HiController {
     @GetMapping(value = "/hi")
     public String sayHi(@RequestParam String name) {
         return schedualServiceHi.sayHiFromClientOne( name );
+    }
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String sayHello(@RequestParam String user){
+        return schedualServiceHi.sayHelloFromClientTwo(user);
     }
 }

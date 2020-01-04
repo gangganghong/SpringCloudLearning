@@ -27,6 +27,11 @@ public class ServiceHiApplication {
     public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
         return "hi " + name + " ,i am from port:" + port;
     }
+
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "user") String user){
+        return "hello " + user + " , I am from port:" + port;
+    }
     
 }
 
