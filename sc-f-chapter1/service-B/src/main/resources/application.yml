@@ -1,9 +1,10 @@
+
 server:
-  port: 8762
+  port: 8763
 
 spring:
   application:
-    name: service-A
+    name: service-B
 
 eureka:
   client:

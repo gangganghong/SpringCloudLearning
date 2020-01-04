@@ -1,4 +1,4 @@
-package com.forezp.servicehi;
+package com.forezp.serviceb;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -11,21 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class ServiceHiApplication {
+public class ServiceBApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run( ServiceHiApplication.class, args );
+        SpringApplication.run(ServiceBApplication.class, args);
     }
 
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
-        return "hi " + name + " ,i am from port:" + port;
+    @RequestMapping("/hello")
+    public String home(@RequestParam(value = "name", defaultValue = "cg") String name) {
+        return "hello " + name + " ,i am from port:" + port;
     }
 
 }
-
-
-
