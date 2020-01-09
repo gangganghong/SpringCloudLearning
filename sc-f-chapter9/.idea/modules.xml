@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/service-hi/service-hi.iml" filepath="$PROJECT_DIR$/service-hi/service-hi.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-miya/service-miya.iml" filepath="$PROJECT_DIR$/service-miya/service-miya.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-hi/service-zipkin.iml" filepath="$PROJECT_DIR$/service-hi/service-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hi/service-zipkin.iml" filepath="$PROJECT_DIR$/service-hi/service-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-miya/service2-zipkin.iml" filepath="$PROJECT_DIR$/service-miya/service2-zipkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-miya/service2-zipkin.iml" filepath="$PROJECT_DIR$/service-miya/service2-zipkin.iml" />
     </modules>
   </component>
